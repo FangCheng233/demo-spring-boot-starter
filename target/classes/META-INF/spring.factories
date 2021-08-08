@@ -1,0 +1,10 @@
+#-------starter自动装配---------
+org.springframework.context.ApplicationContextInitializer=com.demo.starter.MyApplicationContextInitializer
+org.springframework.boot.env.EnvironmentPostProcessor=com.demo.starter.beanPostProcessor.MyEnvironmentPostProcessor
+org.springframework.context.annotation.ImportBeanDefinitionRegistrar=com.demo.starter.register.MyImportBeanDefinitionRegistrar
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.demo.starter.extract.config.DemoConfig,\
+com.demo.starter.beanPostProcessor.MyBeanDefinitionRegistryPostProcessor,\
+com.demo.starter.aware.applicationContext.MyApplicationContextAware,\
+com.demo.starter.beanPostProcessor.MyBeanPostProcessor,\
+com.demo.starter.mvc.MyListener,\
+com.demo.starter.mvc.MyFilter
