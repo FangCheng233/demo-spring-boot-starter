@@ -5,6 +5,7 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
+ * ImportBeanDefinitionRegistrar类只能通过其他类@Import的方式来加载，用来动态扫描注册bean
  * @ClassName MyImportBeanDefinitionRegistrar
  * @Description TODO
  * @Author fangcheng

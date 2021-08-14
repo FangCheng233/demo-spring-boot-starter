@@ -16,11 +16,13 @@ import javax.annotation.Resource;
 @RestController
 public class Controller {
 
-    @Resource(name = "demo")
-    private DemoService demoService1111;
+//    @Resource(name = "demo")
+//    private DemoService demoService1111;
 
     @GetMapping("/say")
     public String sayWhat() {
-        return demoService1111.say();
+
+        return "";
+//        return demoService1111.say();
     }
 }

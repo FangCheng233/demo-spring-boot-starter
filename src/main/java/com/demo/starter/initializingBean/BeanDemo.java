@@ -19,7 +19,7 @@ import javax.annotation.PreDestroy;
 public class BeanDemo implements InitializingBean, DisposableBean {
 
     public BeanDemo() {
-        System.out.println("调用构造器");
+        System.out.println("调用构造器--");
     }
     /**
      * Sets the str. *
